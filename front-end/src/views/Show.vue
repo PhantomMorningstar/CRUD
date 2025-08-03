@@ -20,6 +20,12 @@
         </div>
         <input type="text" readonly  :value="word.french"/>
       </div>
+              <div class="ui labeled input">
+        <div class="ui label">
+          <i class="vietnam flag"></i> VietNam
+        </div>
+        <input type="text" readonly  :value="word.vietnam"/>
+      </div>
       <div class="actions">
         <router-link :to="{ name: 'edit', params: { id: this.$route.params.id }}">
           Edit word

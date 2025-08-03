@@ -22,6 +22,12 @@
       </div>
       <input type="text" placeholder="Enter word..." v-model="word.french" />
     </div>
+            <div class="ui labeled input">
+      <div class="ui label">
+        <i class="vietnam flag"></i> VietNam
+      </div>
+      <input type="text" placeholder="Enter word..." v-model="word.vietnam" />
+    </div>
 
     <button class="positive ui button">Submit</button>
   </form>
@@ -38,7 +44,8 @@ export default {
         return {
           english: '',
           german: '',
-          french: ''
+          french: '',
+          vietnam: ''
         };
       }
     }
@@ -50,7 +57,7 @@ export default {
   },
   methods: {
     onSubmit: function() {
-        if (this.word.english === '' || this.word.german === '' || this.word.french=== '') {
+        if (this.word.english === '' || this.word.german === '' || this.word.french=== '' || this.word.vietnam === '') {
         this.errorsPresent = true;
         } else {
         this.$emit('createOrUpdate', this.word);

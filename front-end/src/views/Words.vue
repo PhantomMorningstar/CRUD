@@ -7,6 +7,7 @@
           <th>English</th>
           <th>German</th>
           <th>France</th>
+          <th>VietNam</th>
           <th colspan="3"></th>
         </tr>
       </thead>
@@ -14,6 +15,7 @@
           <td>{{ word.english }}</td>
           <td>{{ word.german }}</td>
           <td>{{ word.french }}</td>
+          <td>{{ word.vietnam }}</td>
           <td width="75" class="center aligned">
           <router-link :to="{ name:'show', params: { id: word._id }}">Show</router-link></td>
           <td width="75" class="center aligned">
